@@ -67,3 +67,12 @@ export class ProcessedRecordDto {
     this.compressed_image_urls = compressed_image_urls;
   }
 }
+
+export class WebhookResponseDto {
+  @ApiProperty()
+  message: string;
+
+  constructor(message: string) {
+    this.message = message;
+  }
+}
